@@ -6,6 +6,19 @@ public class BinaryPrinter {
 	//Create a main method to test your methods.
 	
 	public void printByteBinary(byte b) {
+		boolean temp = true;
+		int count = 0;
+		while(temp) {
+			if(b%(Math.pow(2, count))!=b) {
+				count++;
+			}else {
+				temp = false;
+			}
+		}
+		for (int i = 0; i < count; i++) {
+			int r1 = (int) (b%(Math.pow(2, count)));
+			
+		}
 		
 	}
 	
